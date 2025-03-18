@@ -5,18 +5,22 @@
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
-    "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ms-vscode.vscode-typescript-next",
-        "ms-azuretools.vscode-docker",
-        "eamodio.gitlens",
-        "ms-vsliveshare.vsliveshare",
-        "christian-kohler.path-intellisense",
-        "humao.rest-client",
-        "DavidAnson.vscode-markdownlint",
-        "CoenraadS.bracket-pair-colorizer",
-        "msjsdiag.debugger-for-chrome"
-    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-vscode.vscode-typescript-next",
+                "ms-azuretools.vscode-docker",
+                "eamodio.gitlens",
+                "ms-vsliveshare.vsliveshare",
+                "christian-kohler.path-intellisense",
+                "humao.rest-client",
+                "DavidAnson.vscode-markdownlint",
+                "CoenraadS.bracket-pair-colorizer",
+                "msjsdiag.debugger-for-chrome"
+            ]
+        }
+    },
     "postCreateCommand": "npm install"
 }
