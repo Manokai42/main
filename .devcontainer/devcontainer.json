@@ -1,0 +1,17 @@
+{
+  "name": "Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next"
+  ],
+  "postCreateCommand": "pnpm install",
+  "forwardPorts": [
+    3000
+  ],
+  "remoteUser": "vscode"
+}
