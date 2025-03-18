@@ -1,17 +1,22 @@
 {
-  "name": "Dev Container",
-  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "ms-vscode.vscode-typescript-next"
-  ],
-  "postCreateCommand": "pnpm install",
-  "forwardPorts": [
-    3000
-  ],
-  "remoteUser": "vscode"
+    "name": "Node.js & TypeScript",
+    "dockerFile": "Dockerfile",
+    "appPort": [3000],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next",
+        "ms-azuretools.vscode-docker",
+        "eamodio.gitlens",
+        "ms-vsliveshare.vsliveshare",
+        "christian-kohler.path-intellisense",
+        "humao.rest-client",
+        "DavidAnson.vscode-markdownlint",
+        "CoenraadS.bracket-pair-colorizer",
+        "msjsdiag.debugger-for-chrome"
+    ],
+    "postCreateCommand": "npm install"
 }

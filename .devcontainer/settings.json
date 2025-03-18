@@ -1,0 +1,17 @@
+{
+    "eslint.enable": true,
+    "prettier.enable": true,
+    "typescript.check.npmIsInstalled": true,
+    "docker.enable": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "liveshare.featureSet": "insiders",
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "rest-client.enableTelemetry": false,
+    "markdownlint.config": {
+        "default": true,
+        "MD033": false,
+        "MD041": false
+    }
+}
