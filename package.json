@@ -1,11 +1,18 @@
 {
   "name": "chatgptbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
-  "description": "A Probot app",
+  "description": "A Probot app that integrates ChatGPT",
   "author": "oceanlvr",
   "license": "ISC",
   "homepage": "https://github.com/oceanlvr/ChatGPT-ProBot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oceanlvr/ChatGPT-ProBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oceanlvr/ChatGPT-ProBot/issues"
+  },
   "keywords": [
     "probot",
     "rebot",
