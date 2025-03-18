@@ -13,5 +13,6 @@
         "default": true,
         "MD033": false,
         "MD041": false
-    }
+    },
+    "npm.packageManager": "npm" // Add this line
 }
