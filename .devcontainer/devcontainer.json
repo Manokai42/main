@@ -2,12 +2,12 @@
     "name": "Node.js & TypeScript",
     "dockerFile": "Dockerfile",
     "appPort": [3000],
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
     "customizations": {
         "vscode": {
-            "extensions": [
+            "settings": {
+            "terminal.integrated.shell.linux": "/bin/bash"
+        },
+        "extensions": [
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
                 "ms-vscode.vscode-typescript-next",
