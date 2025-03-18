@@ -43,4 +43,37 @@
   "jest": {
     "testEnvironment": "node"
   }
+{, 
+name: NodeJS with Grunt
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-onThe error message from the logs indicates that the `grunt` command is not found locally in the project. This suggests that `grunt` is not installed as a dependency in the project.
+
+To resolve this issue, you need to add `grunt` as a development dependency in your `package.json` file. Here's how you can do: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build
+      run: grunt
+}
 }
