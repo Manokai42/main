@@ -36,7 +36,7 @@
     "nodemon": "^2.0.20",
     "rollup": "^3.5.1",
     "smee-client": "^1.2.2",
-    "grunt": "^1.5.3",
+    "grunt": "^1.5.3"
   },
   "engines": {
     "node": ">= 14"
